@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.loader {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.error {
+  color: red;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.character-card {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: lightgray;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+}
+
+.pagination {
+  margin: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.modal-open .character-card {
+  pointer-events: none; 
+}

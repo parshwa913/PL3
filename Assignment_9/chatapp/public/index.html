@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #chat-container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #messages {
+            list-style: none;
+            padding: 0;
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        #messages li {
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        #chat-form {
+            display: flex;
+        }
+        #message-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #send-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .my-message {
+            background-color: #d4edda;
+            text-align: right;
+        }
+        .other-message {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chat-container">
+    <ul id="messages"></ul>
+    <form id="chat-form">
+        <input id="message-input" autocomplete="off" placeholder="Type a message" /><button id="send-button">Send</button>
+    </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+    let myId;
+
+    socket.on('connect', function() {
+        myId = socket.id;
+    });
+
+    const form = document.getElementById('chat-form');
+    const input = document.getElementById('message-input');
+    const messages = document.getElementById('messages');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (input.value) {
+            socket.emit('chat message', input.value);
+            input.value = '';
+        }
+    });
+
+    socket.on('chat message', function(data) {
+        const item = document.createElement('li');
+
+        if (data.id === myId) {
+            item.classList.add('my-message');
+        } else {
+            item.classList.add('other-message');
+        }
+
+        item.textContent = data.msg;
+        messages.appendChild(item);
+        messages.scrollTop = messages.scrollHeight;
+    });
+</script>
+
+</body>
+</html>

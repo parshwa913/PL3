@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="Bookstore.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Online Bookstore</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="featured-books">
+                <h2>Featured Books</h2>
+                <div class="book">
+                    <img src="ironman.jpg" alt="Book Cover">
+                    <h3>Iron Man</h3>
+                    <p>Stan Lee</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </section>
+
+            <section class="book-grid">     
+                <h2>All Books</h2>
+                <div class="book">
+                    <img src="hulk.jpg" alt="Book Cover">
+                    <h3>The Incredible Hulk</h3>
+                    <p>Stan Lee</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="Bookstore.js"></script>
+</body>
+</html>

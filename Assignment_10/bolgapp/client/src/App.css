@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #eef2f3; /* Soft gray background */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: white; /* White background for content */
+  border-radius: 10px; /* More rounded corners */
+}
+
+h1, h2 {
+  color: #333; /* Dark color for headers */
+  text-align: center; /* Center align headers */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Primary color */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+nav {
+  background-color: #007bff; /* Navbar background */
+  padding: 15px; /* Navbar padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for navbar */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Flex layout for nav items */
+}
+
+nav li {
+  margin-right: 30px; /* Space between nav items */
+}
+
+nav a {
+  color: white; /* White text for nav links */
+  font-weight: bold; /* Bold font */
+}
+
+nav button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 8px 15px; /* Padding */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+nav button:hover {
+  background-color: #c82333; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

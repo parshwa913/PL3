@@ -1,0 +1,66 @@
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+.home-title {
+  text-align: center;
+  color: #4a4a4a; /* Darker gray */
+  margin-bottom: 25px; /* Space adjusted */
+}
+
+.post-list {
+  display: flex; /* Changed to flex layout */
+  flex-wrap: wrap; /* Wraps items */
+  justify-content: space-between; /* Space between items */
+}
+
+.post-card {
+  background-color: #f8f9fa; /* Light card background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  flex: 1 1 300px; /* Flex item sizing */
+  margin: 15px; /* Space around cards */
+  transition: transform 0.2s; /* Scale effect */
+}
+
+.post-card:hover {
+  transform: scale(1.03); /* Slightly scale up */
+}
+
+.post-title {
+  margin: 15px;
+  font-size: 1.5em;
+  color: #333; /* Dark color */
+}
+
+.post-link {
+  text-decoration: none;
+  color: #007bff; /* Primary color */
+}
+
+.post-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.post-body {
+  padding: 15px;
+  color: #555; /* Lighter text color */
+}
+
+.error-message {
+  color: #e63946; /* Red color for error messages */
+  text-align: center;
+}

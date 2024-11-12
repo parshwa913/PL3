@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #343a40; /* Dark background */
+  padding: 15px; /* Increased padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #ffffff; /* White logo color */
+  font-size: 26px; /* Larger font size */
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex; /* Flexbox for horizontal alignment */
+}
+
+.navbar-item {
+  color: #ffffff; /* White text color for items */
+  text-decoration: none;
+  padding: 12px 20px; /* Increased padding for menu items */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.navbar-logout {
+  color: #ffffff; /* White text color for logout button */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px; /* Increased padding for button */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.navbar-logout:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  transform: translateY(-2px); /* Lift effect */
+}

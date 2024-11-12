@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #b963cb;
+}
+
+.top-bar {
+  background-color: #7356e7;
+  color: #4484d8;
+  padding: 10px;
+  text-align: center;
+}
+
+.top-bar-link {
+  color: #f4e80d;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.top-bar-link:hover {
+  color: #ccc;
+}
+
+.header-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.header-container img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid #80d2eb;
+}
+
+.section-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-container h2 {
+  margin-top: 0;
+}
+
+.achievements-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievements-list li {
+  margin-bottom: 10px;
+}
+
+.achievement-article {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2749c6;
+}
+
+.achievement-article h3 {
+  margin-top: 0;
+}
+
+.top-bar-link[href*="#"] {
+  scroll-behavior: smooth;
+}
+

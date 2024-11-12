@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Fundamentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Task 1 */
+        #checkbox1 {
+            margin-right: 10px;
+        }
+        #checkButton {
+            margin-top: 10px;
+        }
+
+        /* Task 2 */
+        #firstName, #lastName, #fullName {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #combineButton {
+            margin-top: 10px;
+        }
+
+        /* Task 3 */
+        #displayValue {
+            margin-right: 10px;
+        }
+        #incrementButton, #resetButton {
+            margin-right: 5px;
+        }
+
+        /* Task 4 */
+        #searchInput {
+            margin-bottom: 10px;
+        }
+        #itemList li {
+            margin: 5px 0;
+        }
+
+        /* Task 5 */
+        #balloonContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+            width: 330px; 
+            height: 150px; 
+            background-color: black; 
+            padding: 10px; 
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .balloon {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        #refreshButton {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Task 1: Check Checkbox</h2>
+<label for="checkbox1">Checkbox:</label>
+<input type="checkbox" id="checkbox1">
+<button id="checkButton">Check Checkbox</button>
+
+<h2>Task 2: Combine Names</h2>
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName">
+<br>
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName">
+<br>
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" readonly>
+<br>
+<button id="combineButton">Combine Names</button>
+
+<h2>Task 3: Increment and Reset</h2>
+<button id="displayValue">0</button>
+<button id="incrementButton">Increment</button>
+<button id="resetButton">Reset</button>
+
+<h2>Task 4: Dynamic Input Filter</h2>
+<input type="text" id="searchInput" placeholder="Search...">
+<ul id="itemList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Date</li>
+    <li>Fig</li>
+    <li>Grape</li>
+    <li>Kiwi</li>
+    <li>Lemon</li>
+    <li>Mango</li>
+    <li>Orange</li>
+</ul>
+
+<h2>Task 5: Balloons</h2>
+<div id="balloonContainer">
+</div>
+<script src="script4.js"></script>
+
+</body>
+</html>

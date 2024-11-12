@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Introduction to Web Development</h1>
+        <h2>Master the art of creating modern, responsive websites</h2>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="#" onclick="showSection('about')">About the Course</a>
+            <a href="#" onclick="showSection('outline')">Course Outline</a>
+            <a href="#" onclick="showSection('instructors')">Instructors</a>
+            <a href="#" onclick="showSection('momin')">Dr. B. F. Momin</a>
+            <a href="#" onclick="showSection('contact')">Contact Us</a>
+            <span class="hamburger-menu" onclick="toggleMenu()">☰</span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="active">
+            <h2>About the Course</h2>
+            <div class="about-content">
+                <div>
+                    <p>Our Introduction to Web Development course is designed for beginners who want to learn how to
+                        create
+                        beautiful, responsive websites. You'll gain hands-on experience with HTML, CSS, and JavaScript,
+                        and
+                        build real-world projects that you can showcase in your portfolio.</p>
+                    <p>By the end of this course, you will be able to:</p>
+                    <ul>
+                        <li>Understand the basics of HTML, CSS, and JavaScript.</li>
+                        <li>Design responsive web pages using modern techniques.</li>
+                        <li>Implement interactive features using JavaScript.</li>
+                        <li>Create a personal project to demonstrate your skills.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ideal for:</p>
+                    <ul>
+                        <li>Individuals looking to start a career in web development.</li>
+                        <li>Graphic designers wanting to expand their skillset.</li>
+                        <li>Entrepreneurs seeking to build their own websites.</li>
+                    </ul>
+                    <p>No prior coding experience is necessary, but familiarity with the internet and basic computer
+                        skills
+                        are recommended.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="outline">
+            <h2>Course Outline</h2>
+            <ol>
+                <li>Introduction to HTML
+                    <button onclick="toggleDetails('module1')">Details</button>
+                    <div id="module1" class="module-details">
+                        <ul>
+                            <li>Understanding HTML tags and elements.</li>
+                            <li>Creating your first HTML page.</li>
+                            <li>Structuring content with headings, paragraphs, and lists.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>Styling with CSS
+                    <button onclick="toggleDetails('module2')">Details</button>
+                    <div id="module2" class="module-details">
+                        <ul>
+                            <li>Introduction to CSS selectors and properties.</li>
+                            <li>Applying styles to HTML elements.</li>
+                            <li>Responsive design principles.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>JavaScript Basics
+                    <button onclick="toggleDetails('module3')">Details</button>
+                    <div id="module3" class="module-details">
+                        <ul>
+                            <li>Understanding variables, data types, and operators.</li>
+                            <li>Working with functions and events.</li>
+                            <li>Manipulating the DOM.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>Building Your First Website
+                    <button onclick="toggleDetails('module4')">Details</button>
+                    <div id="module4" class="module-details">
+                        <ul>
+                            <li>Integrating HTML, CSS, and JavaScript.</li>
+                            <li>Deploying your website online.</li>
+                            <li>Project work and portfolio building.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="instructors">
+            <h2>Meet the Instructors</h2>
+            <div class="instructor-card">
+                <img src="C:\Users\Parshwa\Desktop\CLG\Sem 5 assign\22510064_PL_3\Assignment_2\momin.png" alt="Instructor 1">
+                <div>
+                    <h3>Prof. Momin</h3>
+                    <p>Dr. Momin has been a prominent figure in web development for over 15 years. 
+                        With a Ph.D. in Computer Science, he has contributed to numerous innovative 
+                        web projects and continues to research new methodologies in the field.</p>
+                </div>
+            </div>
+            <div class="instructor-card">
+                <img src="C:\Users\Parshwa\Desktop\CLG\Sem 5 assign\22510064_PL_3\Assignment_2\cruise.jpg" alt="Instructor 2">
+                <div>
+                    <h3>Prof. Cruise</h3>
+                    <p>Tom is a UX/UI designer with a passion for creating intuitive and user-friendly interfaces. His
+                        background in graphic design helps her bring a creative touch to every project she works on.</p>
+                </div>
+            </div>
+            <div class="instructor-card">
+                <img src="C:\Users\Parshwa\Desktop\CLG\Sem 5 assign\22510064_PL_3\Assignment_2\reynolds.jpg" alt="Instructor 3">
+                <div>
+                    <h3>Prof. Reynolds</h3>
+                    <p>Ryan is a full-stack developer with expertise in modern JavaScript frameworks. He enjoys
+                        teaching others about web development and helping them achieve their career goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="momin">
+            <h2>Dr. B. F. Momin</h2>
+            <div class="bio">
+                <h3>Bio</h3>
+                <p>Dr. Momin has been a prominent figure in web development for over 15 years. With a Ph.D. in Computer
+                    Science, he has contributed to numerous innovative web projects and continues to research new
+                    methodologies in the field.</p>
+            </div>
+            <div class="momin-image">
+                <img src="C:\Users\Parshwa\Desktop\CLG\Sem 5 assign\22510064_PL_3\Assignment_2\momin.png" alt="Dr. Momin's Photo" />
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: bf.momin@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="research-info">
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Web Performance Optimization</li>
+                    <li>Responsive Web Design</li>
+                    <li>JavaScript Frameworks</li>
+                </ul>
+            </div>
+            <div class="projects">
+                <h3>Projects</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project A</td>
+                            <td>Developed a scalable web application for e-commerce.</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>Project B</td>
+                            <td>Optimized a high-traffic website for performance.</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>Project C</td>
+                            <td>Contributed to an open-source JavaScript framework.</td>
+                            <td>2020</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="grid-container">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Development Course. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+
+        function toggleDetails(moduleId) {
+            const details = document.getElementById(moduleId);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleMenu() {
+            const menu = document.querySelector('nav .menu');
+            menu.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('about');
+        });
+    </script>
+</body>
+
+</html>
